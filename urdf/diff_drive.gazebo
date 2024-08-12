@@ -12,8 +12,8 @@
 
 
             <!-- Limits -->
-            <max_wheel_torque>6</max_wheel_torque>
-            <max_wheel_acceleration>0.4</max_wheel_acceleration>
+            <max_wheel_torque>100</max_wheel_torque>
+            <max_wheel_acceleration>50</max_wheel_acceleration>
 
             
             <!-- Output -->

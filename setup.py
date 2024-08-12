@@ -15,7 +15,8 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
         (os.path.join('share', package_name, 'meshes'), glob('meshes/*')),
-        (os.path.join('share', package_name, 'config'), glob('config/*'))
+        (os.path.join('share', package_name, 'config'), glob('config/*')),
+        (os.path.join('share', package_name, 'world'), glob('world/*'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,8 +28,7 @@ setup(
     entry_points={
         'console_scripts': [
              'odom_to_tf_node = fckwv1_description.odom_to_tf_node:main',
-             'wheel_transform_publisher = fckwv1_description.wheel_transform_publisher:main',
-            #  'encoder_subscriber = fckwv1_description.nsv_msgs_Odometry:main',
+             'wheel_transform_publisher = fckwv1_description.wheel_transform_publisher:main'
         ],
     },
 )
